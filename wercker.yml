@@ -18,10 +18,11 @@ push-release:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
-        repository: $DOCKER_REPO
+        #tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+        #repository: $DOCKER_REPO
+        repository: $DOCKER_USERNAME/my-repository
         registry: $DOCKER_REGISTRY
-        working-dir: /pipeline/source
-        ports: $PORT
-        env: PORT=$PORT
+        #working-dir: /pipeline/source
+        #ports: $PORT
+        #env: PORT=$PORT
         #cmd: sh target/bin/start
