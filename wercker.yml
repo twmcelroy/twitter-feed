@@ -24,4 +24,4 @@ push-release:
         working-dir: /pipeline/source
         ports: $PORT
         env: PORT=$PORT
-        cmd: sh target/bin/start
+        #cmd: sh target/bin/start
