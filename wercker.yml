@@ -20,7 +20,7 @@ push-release:
         password: $DOCKER_PASSWORD
         #tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
         #repository: $DOCKER_REPO
-        repository: $DOCKER_USERNAME/my-repository
+        repository: $DOCKER_USERNAME/twitter-feed
         registry: $DOCKER_REGISTRY
         #working-dir: /pipeline/source
         #ports: $PORT
